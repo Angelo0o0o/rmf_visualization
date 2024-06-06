@@ -9,8 +9,8 @@
   <arg name="display_names" default="true"/>
   <arg name="websocket_port" default="8006"/>
   <arg name="headless" default="false" description="Do not launch rviz2"/>
-  <arg name="path_width" default="0.2" description="Width of schedule path(m) to be rendered"/>
-  <arg name="lane_width" default="0.5" description="Width of lanes(m) to be rendered"/>
+  <arg name="path_width" default="1.0" description="Width of schedule path(m) to be rendered"/>
+  <arg name="lane_width" default="1.0" description="Width of lanes(m) to be rendered"/>
   <arg name="waypoint_scale" default="1.3" description="The relative size of a waypoint wrt the lane width"/>
   <arg name="text_scale" default="0.7" description="The relative size of a text label wrt the lane width"/>
   <arg name="lane_transparency" default="0.6" description="The transparency of a rendered lane in default state"/>
@@ -34,9 +34,11 @@
       <param name="use_sim_time" value="$(var use_sim_time)"/>
       <param name="fleet_state_nose_scale" value="$(var fleet_state_nose_scale)"/>
       <!-- Radius parameters for fleets available in rmf_demos -->
+      <param name="burger_radius" value="0.5"/>
+      <param name="waffle_radius" value="0.5"/>
       <param name="tinyRobot_radius" value="0.3"/>
       <param name="deliveryRobot_radius" value="0.6"/>
-      <param name="cleanerBotA_radius" value="1.0"/>
+      <param name="cleanerBotA_radius" value="10.0"/>
       <param name="cleanerBotE_radius" value="1.0"/>
       <param name="caddy_radius" value="1.5"/>
     </node>

@@ -35,7 +35,7 @@ SchedulePanel::SchedulePanel(QWidget* parent)
 : rviz_common::Panel(parent),
   _param_topic("/rmf_visualization/parameters"),
   _map_name("B1"),
-  _finish_duration("600"),
+  _finish_duration("10"),
   _start_duration_value(0)
 {
   _node = std::make_shared<rclcpp::Node>("rmf_schedule_panel");

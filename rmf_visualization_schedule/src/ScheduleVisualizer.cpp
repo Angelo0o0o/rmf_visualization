@@ -160,7 +160,7 @@ ScheduleVisualizer::ScheduleVisualizer(
   _rviz_param = std::make_shared<RvizParamMsg>(
     rmf_visualization_msgs::build<RvizParamMsg>()
     .map_name(std::move(map_name))
-    .query_duration(600)
+    .query_duration(10)
     .start_duration(0)
   );
 
