@@ -380,6 +380,7 @@ void ScheduleVisualizer::add_location_markers(
   const auto& trajectory = element.route->trajectory();
 
   // Find the pose of the markers
+  //RCLCPP_INFO(get_logger(),"start time:  %f \n", param.start_time.to_seconds());
   const auto it = trajectory.find(param.start_time);
   auto begin = it;
   if (begin != trajectory.begin())
